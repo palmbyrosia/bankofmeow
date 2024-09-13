@@ -1,8 +1,4 @@
-// Import necessary Firestore functions
-import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
-import { db } from "./firebase.js";  // Import the initialized Firestore instance
-
-export async function login() {
+async function login() {
     const discordId = parseInt(document.getElementById('discord-id').value);
     const pin = parseInt(document.getElementById('pin').value);
 
