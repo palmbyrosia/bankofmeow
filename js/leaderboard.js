@@ -1,4 +1,4 @@
-async function loadLeaderboard() {
+export async function loadLeaderboard() {
     const q = query(collection(db, "accounts"), orderBy("balance", "desc"));
     const querySnapshot = await getDocs(q);
 

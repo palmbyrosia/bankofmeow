@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/fireba
 import { getFirestore, doc, getDoc, setDoc, updateDoc, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
 
 // Firebase configuration
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyBBDS3yxY4LPFyEs7B-cW3q2Lqh0JlnxXA",
     authDomain: "bank-of-meow.firebaseapp.com",
     projectId: "bank-of-meow",
@@ -14,5 +14,5 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+export const app = initializeApp(firebaseConfig);
+export const db = getFirestore(app);
