@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Meow - Admin</title>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+    <div id="admin-container">
+        <h2>Admin Page</h2>
+        <input type="password" id="admin-password" placeholder="Admin Password">
+        <button onclick="adminLogin()">Login</button>
+
+        <div id="admin-actions" style="display: none;">
+            <input type="number" id="target-id" placeholder="Account Discord ID">
+            <input type="number" id="new-balance" placeholder="Set New Balance">
+            <button onclick="setBalance()">Set Balance</button>
+            <input type="number" id="add-amount" placeholder="Add Amount">
+            <button onclick="addBalance()">Add Amount</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Meow - Transaction</title>
+    <script type="module" src="js/firebase.js"></script>
+    <script type="module" src="js/transaction.js"></script>
+</head>
+<body>
+    <div id="transaction-container">
+        <h2>Make a Transaction</h2>
+        <input type="number" id="recipient-id" placeholder="Recipient Discord ID">
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="makeTransaction()">Send</button>
+    </div>
+</body>
+</html>
