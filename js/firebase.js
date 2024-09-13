@@ -10,5 +10,5 @@ var firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+var app = initializeApp(firebaseConfig);
 var db = getFirestore(app);
