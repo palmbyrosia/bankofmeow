@@ -1,4 +1,4 @@
-export function adminLogin() {
+function adminLogin() {
     const password = document.getElementById('admin-password').value;
     if (password === 'admin') {
         document.getElementById('admin-actions').style.display = 'block';
@@ -7,7 +7,7 @@ export function adminLogin() {
     }
 }
 
-export async function setBalance() {
+async function setBalance() {
     const targetId = parseInt(document.getElementById('target-id').value);
     const newBalance = parseFloat(document.getElementById('new-balance').value);
 
@@ -19,7 +19,7 @@ export async function setBalance() {
     alert('Balance Updated!');
 }
 
-export async function addBalance() {
+async function addBalance() {
     const targetId = parseInt(document.getElementById('target-id').value);
     const addAmount = parseFloat(document.getElementById('add-amount').value);
 

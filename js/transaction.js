@@ -1,6 +1,6 @@
 const discordId = new URLSearchParams(window.location.search).get('id');
 
-export async function makeTransaction() {
+async function makeTransaction() {
     const recipientId = parseInt(document.getElementById('recipient-id').value);
     const amount = parseFloat(document.getElementById('amount').value);
 
