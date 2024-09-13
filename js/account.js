@@ -1,7 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const discordId = params.get('id');
 
-async function loadAccount() {
+export async function loadAccount() {
     const userRef = doc(db, "accounts", discordId);
     const userSnap = await getDoc(userRef);
 

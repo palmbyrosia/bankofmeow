@@ -1,4 +1,4 @@
-async function login() {
+export async function login() {
     const discordId = parseInt(document.getElementById('discord-id').value);
     const pin = parseInt(document.getElementById('pin').value);
 
